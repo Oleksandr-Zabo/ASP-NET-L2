@@ -1,0 +1,14 @@
+﻿@page
+@model ASP_NET_L2.Pages.IndexInputModel
+@{
+}
+
+<div>
+    <form method="post">
+        <input type="text" name="UserName" asp-for="Input.UserName" />
+        <button type="submit" asp-page-handler="Save">Save</button>
+        <button type="submit" asp-page-handler="Delete">Delete</button>
+    </form>
+
+    <h1>Hello, @Model.Name </h1>
+</div>
