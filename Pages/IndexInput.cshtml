@@ -5,7 +5,8 @@
 
 <div>
     <form method="post">
-        <input type="text" name="UserName" asp-for="Input.UserName" />
+        <input type="text"asp-for="Input.FirstName" />
+        <input type="text"  asp-for="Input.LastName" />
         <button type="submit" asp-page-handler="Save">Save</button>
         <button type="submit" asp-page-handler="Delete">Delete</button>
     </form>
